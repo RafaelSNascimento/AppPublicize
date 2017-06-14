@@ -1,0 +1,13 @@
+.nav > li{
+    width:50%;
+}
+.nav{
+    margin: 5px;
+}
+body{
+    background: transparent !important;
+    font: 14px 'Indie Flower', cursive !important;
+}
+.input-group{
+	margin: 15px 0px 15px 0px;
+}

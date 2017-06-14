@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-xs-offset-1 col-xs-10">
+        <form>
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" ng-model="dashboard.user.username" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
+                <input type="text" class="form-control" ng-model="dashboard.user.cpf" placeholder="CPF" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" class="form-control" ng-model="dashboard.user.password" placeholder="Password" aria-describedby="basic-addon1">
+            </div>
+            <label>Você deseja divulgar eventos: <input type="checkbox" ng-model="dashboard.user.role"></label><br/>
+            <button class="btn btn-default" ng-click="cadastrarUsuario()">Cadastrar</button>
+        </form>
+    </div>
+</div>

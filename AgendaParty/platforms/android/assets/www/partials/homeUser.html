@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-xs-offset-1 col-xs-10">
+	    <div class="input-group">
+	   		<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+	    	<input type="text" class="form-control" ng-model="filtro.nome" placeholder="Nome" aria-describedby="basic-addon1">
+		</div>
+		<div class="input-group">
+		    <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
+		    <input type="text" class="form-control" ng-model="filtro.cidade" placeholder="Cidade" aria-describedby="basic-addon1">
+		</div>
+		<div class="input-group">
+		    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+		    <input type="password" class="form-control" ng-model="filtro.data" placeholder="Data" aria-describedby="basic-addon1">
+		</div>
+		<button class="btn btn-default" ng-click="filtrarEventos()">Filtrar</button>
+	</div>
+</div>
+<div class="row" style="margin-top: 10px;">
+	<div class="col-xs-12">
+	    <ng-map zoom="14" center="[-23.1213196, -45.7024]">
+	    <marker ng-repeat="evento in eventos"
+        position="{{[evento.latitude, evento.longitude]}}"
+        title="{{evento.nome}}"></marker>
+	    </ng-map>
+	</div>
+</div>
